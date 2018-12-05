@@ -1,30 +1,33 @@
 import java.util.ArrayList;
 public class DiceHolder{
 
-	private ArrayList<Integer> x = new ArrayList<>();
+	private ArrayList<Die> cup;
 
-	
+	public DiceHolder(){
+		 cup = new ArrayList<Die>();
+	}
 
 	public int addDie(Die die){
 
-	if(x.size() == 6){
-		return -1;
+	if(cup.size() < 6){
+		cup.add(die);
+		return 1;
+
 	}
 	else{
-		x.add(Die.getValue());
 		return 1;
 	}
 }
 	public void shake(){
-		x.set(0, x.get((int)(Math.random()*6)+1));
-		x.set(1, x.get((int)(Math.random()*6)+1));
-		x.set(2, x.get((int)(Math.random()*6)+1));
-		x.set(3, x.get((int)(Math.random()*6)+1));
-		x.set(4, x.get((int)(Math.random()*6)+1));
-		x.set(5, x.get((int)(Math.random()*6)+1));
+		cup.set(0, cup.get((int)(Math.random()*6)+1));
+		cup.set(1, cup.get((int)(Math.random()*6)+1));
+		cup.set(2, cup.get((int)(Math.random()*6)+1));
+		cup.set(3, cup.get((int)(Math.random()*6)+1));
+		cup.set(4, cup.get((int)(Math.random()*6)+1));
+		cup.set(5, cup.get((int)(Math.random()*6)+1));
 
 }
 	public String toString(){
-		return "\n" + x;
+		return "\n" + cup;
 	}
 }
