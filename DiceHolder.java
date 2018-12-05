@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-class DiceHolder{
+public class DiceHolder{
 
 	private ArrayList<Integer> x = new ArrayList<>();
 
