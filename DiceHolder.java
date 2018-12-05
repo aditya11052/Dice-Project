@@ -3,13 +3,15 @@ public class DiceHolder{
 
 	private ArrayList<Integer> x = new ArrayList<>();
 
+	
+
 	public int addDie(Die die){
 
 	if(x.size() == 6){
 		return -1;
 	}
 	else{
-		x.add(die);
+		x.add(Die.getValue());
 		return 1;
 	}
 }
