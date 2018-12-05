@@ -9,7 +9,10 @@ public class DiceRunner{
 
 		int rolls = 0;
 
-		while((D1 != 1) && (D2 != 1)){
+		int one = 8;
+		int two = 9;
+
+		while(one + two > 2){
 		rolls ++;
 		System.out.println("Roll: " + rolls);
 		D1.roll();
@@ -17,6 +20,9 @@ public class DiceRunner{
 		System.out.println("Dice 1: " + D1.toString());
 		System.out.println("Dice 2: " + D2.toString());
 		System.out.println("\n");
+
+		one = D1.getValue();
+		two = D2.getValue();
 		}
 
 		System.out.println("It took " + rolls + " rolls to get Snake Eyes");
@@ -26,6 +32,12 @@ public class DiceRunner{
 
 	}
 }
+
+
+
+
+
+
 
 
 
