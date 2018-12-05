@@ -15,7 +15,7 @@ public class DiceHolder{
 
 	}
 	else{
-		return 1;
+		return -1;
 	}
 }
 	public void shake(){
