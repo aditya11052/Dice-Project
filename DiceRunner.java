@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class DiceRunner{
 	public static void main(String[]args){
 
-		//Task1
+		//Test1
 		Die D1 = new Die();
 		Die D2 = new Die();
 
@@ -26,20 +26,9 @@ public class DiceRunner{
 		}
 
 		System.out.println("It took " + rolls + " rolls to get Snake Eyes");
-
-
-
+		
+		//Test2
+		DiceHolder Cup = new DiceHolder();
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
