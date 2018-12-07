@@ -27,19 +27,19 @@ public class DiceRunner{
 
 		System.out.println("It took " + rolls + " rolls to get Snake Eyes");
 
+		//Task2
+		DiceHolder list = new DiceHolder();
 
+		for(int i=0;i<=5;i++){
+		Die D3 = new Die((int)(Math.random()*20)+1,(int)(Math.random()*20)+1);
+		list.addDie(D3);
+		System.out.println(list.toString());
+	}
+
+		list.shake();
+		System.out.println(list.toString());
 
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
