@@ -19,15 +19,15 @@ public class DiceHolder{
 	}
 }
 	public void shake(){
-		cup.set(0, cup.get((int)(Math.random()*6)+1));
-		cup.set(1, cup.get((int)(Math.random()*6)+1));
-		cup.set(2, cup.get((int)(Math.random()*6)+1));
-		cup.set(3, cup.get((int)(Math.random()*6)+1));
-		cup.set(4, cup.get((int)(Math.random()*6)+1));
-		cup.set(5, cup.get((int)(Math.random()*6)+1));
-
+		for(int i=0;i<cup.size();i++){
+			cup.get(i).roll();
+		}
 }
 	public String toString(){
-		return "\n" + cup;
+		String r="";
+		for(int i=0;i<cup.size();i++){
+		r+="\nDice "+(i+1)+": "+(cup.get(i));
+	}
+	return r;
 	}
 }
